@@ -1,0 +1,672 @@
+/*
+-----------------------------------------------------------
+ESTILO PARA TODOS LOS TEXTOS
+-----------------------------------------------------------
+*/
+
+:root {
+    /* Colores base */
+    --fondo-oscuro-100: #080808;
+    --fondo-oscuro-90: #222222;
+    --fondo-oscuro-80: #333333;
+    --fondo-oscuro-50: #666666;
+    --fondo-claro-100: #dde2e2;
+    --fondo-azul: linear-gradient(135deg, #065af7, #6093f1);
+
+    /*Colores textos*/
+    --color-texto-blanco: #ffffff;
+    --color-texto-negro: #000000;
+    --color-texto-gris: #aaaaaa;
+    --color-texto-naranja: #fcba04;
+
+    /*Tamaño textos*/
+    --texto-48: 48px;
+    --texto-32: 32px;
+    --texto-24: 24px;
+    --texto-21: 21px;
+    --texto-18: 18px;
+    --texto-14: 14px;
+    --texto-12: 12px;
+
+    /* Colores Botones */
+    --color-verde: #05f85e;
+    --color-verde-hover: #439b63;
+    --color-naranja: #f8d667;
+    --color-naranja-hover: #fcba04;
+
+    --color-sombra-ok: 2px 1px 10px #080808;
+    --color-sombra-naranja: 0.8px 0.8px 0.8px #fcba04;
+    --color-eliminar: #fc0202;
+    --color-eliminar-hover: #e67171;
+    --color-guardar: #0463fc;
+    --color-guardar-hover: #635bd3;
+
+    /*Márgenes*/
+    --margen-0: 0em;
+    --margen-02: 0.2em;
+    --margen-1: 1em;
+    --margen-2: 2em;
+    --margen-3: 3em;
+    --margen-5: 5em;
+    --margen-16: 1.6;
+    --margen-12: 1.2em;
+
+    /*Transiciones*/
+    --transicion-025: 0.25s ease;
+    --transicion-06: 0.6s ease-in-out;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    font-family: Arial, sans-serif;
+    color: var(--color-texto-blanco);
+}
+
+body {
+    height: 100vh;
+    margin: var(--margen-0);
+    padding: var(--margen-0);
+    background: var(--fondo-oscuro-100);
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-texto-blanco);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: var(--texto-48);
+    margin-bottom: var(--margen-02);
+}
+
+h2 {
+    font-size: var(--texto-32);
+    margin-bottom: var(--margen-1);
+    /*width: fit-content;*/
+}
+
+h3 {
+    font-size: var(--texto-24);
+    margin-bottom: var(--margen-2);
+}
+
+h4 {
+    font-size: var(--texto-18);
+    margin-bottom: var(--margen-12);
+}
+
+p,
+blockquote {
+    color: var(--color-texto-blanco);
+    font-size: var(--texto-18);
+    margin-bottom: var(--margen-2);
+    line-height: var(--margen-16);
+}
+
+header {
+    background: var(--fondo-oscuro-90);
+    color: var(--color-texto-blanco);
+    padding: 0.3em;
+    margin: var(--margen-1);
+    text-align: center;
+}
+
+header p {
+    font-size: var(--margen-12);
+    opacity: 0.8;
+}
+
+.timeline-item {
+    list-style: none;
+}
+
+/*
+-----------------------------------------------------------
+CONTENEDOR GENERAL
+-----------------------------------------------------------
+*/
+
+.contenedor {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 260px;
+    /* espacio para el sidebar fijo */
+    position: relative;
+}
+
+.contenido {
+    flex: 4;
+    margin: var(--margen-1);
+    padding: var(--margen-1);
+    height: 100%;
+    overflow-y: auto;
+    background: var(--fondo-oscuro-90);
+}
+
+
+
+/*
+-----------------------------------------------------------
+SIDE BAR
+-----------------------------------------------------------
+*/
+
+.sidebar {
+    flex: 1;
+    position: fixed;
+    left: 50%;
+    /* movemos el origen al centro */
+    transform: translateX(-760px);
+    /* 1440 / 2 = 720 */
+    top: 0;
+    width: 260px;
+    /*height: 100vh;*/
+    border-radius: var(--margen-1);
+    margin: var(--margen-1);
+    padding: var(--margen-2) 0;
+    text-align: center;
+    background: var(--fondo-oscuro-90);
+    box-shadow: var(--color-sombra-naranja);
+    overflow-y: auto;
+
+}
+
+.sidebar .nombre {
+    text-align: center;
+    line-height: var(--margen-1);
+    font-size: var(--texto-24);
+    margin-bottom: var(--margen-2);
+}
+
+/*
+-----------------------------------------------------------
+MENÚ NAVEGACIÓN EN SIDE BAR
+-----------------------------------------------------------
+*/
+.nav,
+.nav li {
+    padding: 0;
+    margin: 0;
+}
+
+.nav li a {
+    width: 100%;
+    padding: var(--margen-12) 0;
+    border-top: 1px solid var(--fondo-oscuro-80);
+    font-size: var(--texto-18);
+    transition: ease-in-out;
+}
+
+.nav li:last-child a {
+    border-bottom: 1px solid var(--fondo-oscuro-80);
+}
+
+.nav li a:hover {
+    background: var(--fondo-oscuro-80);
+    box-shadow: inset -6px 0 0 var(--fondo-claro-100);
+    transition: var(--transicion-06);
+}
+
+.nav li a:active {
+    background: var(--fondo-oscuro-80);
+    box-shadow: inset -6px 0 0 var(--color-texto-naranja);
+}
+
+/*
+-----------------------------------------------------------
+ESTILO PARA TITULO.
+UNA LINEA ANCHA DEBAJO DEL TEXTO todo el ancho de pantalla
+-----------------------------------------------------------
+*/
+.texto-linea {
+    /*border-bottom: 3px solid var(--fondo-oscuro-50);*/
+    border-bottom: 3px solid var(--color-texto-naranja);
+}
+
+.linea-corta {
+    display: inline-block;
+    border-bottom: 3px solid var(--color-texto-naranja);
+}
+
+/*
+-----------------------------------------------------------
+ESTILO PARA TEXTOS E ICONOS.
+CENTRAR EL TEXTO. LOS ICONOS COMO TB SON TEXTO, SE CENTRAN ASÍ
+-----------------------------------------------------------
+*/
+
+.texto-centrado {
+    text-align: center;
+}
+
+/*
+-----------------------------------------------------------
+ESTILO PARA LAYOUT GRID
+2 Y 6 COLUMNAS
+-----------------------------------------------------------
+*/
+
+.grid-dos-columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    /* 👈 cada módulo se estira horizontalmente */
+    align-items: stretch;
+    /* 👈 cada módulo se estira verticalmente */
+    gap: var(--margen-2);
+    margin: var(--margen-02) auto;
+    padding: var(--margen-02);
+    width: 90%;
+}
+
+.grid-tres-columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: stretch;
+    /* 👈 cada módulo se estira horizontalmente */
+    align-items: stretch;
+    /* 👈 cada módulo se estira verticalmente */
+    gap: var(--margen-2);
+    margin: var(--margen-02) auto;
+    padding: var(--margen-02);
+    width: 90%;
+}
+
+.grid-cuatro-columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: stretch;
+    /* 👈 cada módulo se estira horizontalmente */
+    align-items: stretch;
+    /* 👈 cada módulo se estira verticalmente */
+
+
+    gap: var(--margen-02);
+    margin: var(--margen-02) auto;
+    padding: var(--margen-02);
+    width: 100%;
+}
+
+
+.grid-seis-columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: stretch;
+    /* 👈 cada módulo se estira horizontalmente */
+    align-items: stretch;
+    /* 👈 cada módulo se estira verticalmente */
+    gap: var(--margen-2);
+    margin: var(--margen-02) auto;
+    padding: var(--margen-02);
+    width: 90%;
+}
+
+.grid-seis-columnas img {
+    width: var(--margen-5);
+    height: var(--margen-5);
+    object-fit: cover;
+    transition: transform .3s ease, filter .3s ease;
+}
+
+.grid-seis-columnas img:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 6px var(--color-texto-naranja));
+}
+
+/*
+-----------------------------------------------------------
+ESTILO PARA LOS MODULOS QUE CAMBIAN DE COLOR
+CON EL HOVER
+-----------------------------------------------------------
+*/
+
+.modulo-color {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: var(--margen-1);
+    padding: var(--margen-1);
+    background: var(--fondo-oscuro-80);
+    border-radius: var(--margen-1);
+    box-shadow: var(--color-sombra-ok);
+    transition: var(--transicion-025);
+}
+
+/*
+-----------------------------------------------------------
+ESTILO PARA LOS MODULOS QUE CAMBIAN DE COLOR
+CON EL HOVER
+-----------------------------------------------------------
+*/
+
+.modulo-color:hover {
+    background: var(--fondo-oscuro-50);
+    color: var(--color-texto-blanco);
+    transform: translateY(-0.2em);
+    cursor: pointer;
+}
+
+/*
+-----------------------------------------------------------
+ESTILO PARA RESUMEN
+EDUCACION Y EXPERIENCIA LABORAL
+-----------------------------------------------------------
+*/
+
+.lista-timeline {
+    margin-left: var(--margen-3);
+}
+
+.timeline-item {
+    position: relative;
+    margin-left: var(--margen-5);
+}
+
+.lista-timeline span {
+    display: block;
+    color: var(--color-texto-naranja);
+    font-weight: 600;
+    margin-bottom: var(--margen-12);
+    /*line-height: var(--margen-16);*/
+}
+
+.lista-timeline p {
+    color: var(--color-texto-gris);
+}
+
+.lista-timeline ul {
+    color: var(--color-texto-gris);
+    font-size: var(--texto-18);
+    line-height: var(--margen-16);
+    margin-bottom: var(--margen-2);
+}
+
+/*
+-----------------------------------------------------------
+ESTILO PARA PORTFOLIO
+-----------------------------------------------------------
+*/
+.proyecto {
+    width: 100%;
+    max-width: 30rem;
+    justify-self: center;
+    margin-bottom: var(--margen-1);
+}
+
+.descripcion-proyecto,
+.titulo-proyecto {
+    margin-bottom: var(--margen-1);
+}
+
+.proyecto span {
+    display: block;
+    color: var(--color-texto-naranja);
+    font-weight: 600;
+    margin-bottom: var(--margen-12);
+}
+
+
+/*Imágenes*/
+.marco-imagen {
+    position: relative;
+    width: 20em;
+    height: 20em;
+    margin-bottom: var(--margen-1);
+    overflow: hidden;
+    border: 2px solid var(--color-naranja);
+    border-radius: var(--margen-1);
+    box-shadow: var(--color-sombra-naranja);
+    cursor: pointer;
+}
+
+.marco-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.5s ease;
+}
+
+.marco-imagen:hover img {
+    transform: scale(1.2);
+}
+
+
+/*
+-----------------------------------------------------------
+ESTILO PARA LOS BOTONES 
+-----------------------------------------------------------
+*/
+
+.boton {
+    margin: 0.2em;
+    padding: 0.5em 0.5em;
+    background-color: var(--color-naranja);
+    border: none;
+    border-radius: var(--margen-02);
+    box-shadow: var(--color-sombra-naranja);
+    color: var(--color-texto-blanco);
+    font-size: 1.5em;
+    transition: background-color 0.9s ease;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: var(--color-naranja-hover);
+    color: var(--color-texto-blanco);
+    transform: scale(1.01);
+}
+
+.boton:active {
+    transform: translateY(0.2em) scale(0.95);
+}
+
+
+
+/*
+-----------------------------------------------------------
+BOTON HAMBURGUESA PARA SIDEBAR RESPONSIVE
+-----------------------------------------------------------
+*/
+
+
+.sidebar-movil {
+    position: fixed;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: var(--fondo-oscuro-90);
+    border-bottom: 1px solid var(--fondo-oscuro-50);
+    padding: var(--margen-1) var(--margen-3);
+    /*padding: 10px 20px;*/
+    z-index: 100;
+}
+
+
+.btn-hamburguesa {
+    display: none;
+    font-size: 32px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+/*
+--------------------------------------------------------------
+# BOTÓN Back to top
+--------------------------------------------------------------
+*/
+
+.back-top {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: var(--margen-5);
+    height: var(--margen-5);
+    bottom: var(--margen-5);
+    right: var(--margen-5);
+    border-radius: var(--margen-1);
+    background-color: var(--color-naranja);
+    color: var(--color-texto-blanco);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.back-top:hover {
+    background-color: var(--color-naranja-hover);
+    box-shadow: var(--color-sombra-naranja);
+    color: var(--color-texto-blanco);
+    transition: var(--transicion-06);
+}
+
+/*
+--------------------------------------------------------------
+# CONTACT FORM
+--------------------------------------------------------------
+*/
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--margen-1);
+    width: 100%;
+    /*height: var(--margen-2);*/
+}
+
+.contact-form input,
+textarea {
+    padding: var(--margen-1);
+    width: 50%;
+    height: var(--margen-3);
+    border-radius: var(--margen-1);
+}
+
+
+/*
+--------------------------------------------------------------
+# CONTACTO
+--------------------------------------------------------------
+*/
+
+.icono-grande {
+    margin-bottom: var(--margen-02);
+    margin-top: var(--margen-02);
+    font-size: var(--margen-5);
+    /*los iconos se tratan como un texto*/
+}
+
+
+
+
+
+
+
+
+/*
+-----------------------------------------------------------
+RESPONSIVE
+-----------------------------------------------------------
+*/
+
+@media (max-width: 1024px) {
+    .sidebar-movil {
+        display: flex;
+    }
+
+    .sidebar-movil h1 {
+        font-size: var(--texto-24);
+    }
+
+    /*que desaparezca el header*/
+    header {
+        display: none;
+    }
+
+    /* Ocultamos el sidebar *de escritorio* */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        /* oculto */
+        transform: none;
+        width: 260px;
+        height: 100vh;
+        padding: 70px 0 30px;
+        background: var(--fondo-oscuro-90);
+        box-shadow: var(--color-sombra-naranja);
+        /*opacity: 0;*/
+        z-index: 1000;
+        transition: left 0.3s ease;
+    }
+
+    /* Cuando se active → aparece */
+    .sidebar.active {
+        left: 0;
+    }
+
+    /* Quitamos el espacio del sidebar */
+    .contenedor {
+        padding-left: 0;
+    }
+
+    /* Mostramos botón hamburguesa */
+    .btn-hamburguesa {
+        display: block;
+    }
+}
+
+
+/*Transformar a 3 columnas*/
+@media (max-width: 768px) {
+    .grid-seis-columnas {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid-cuatro-columnas,
+    .grid-tres-columnas {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .back-top {
+        bottom: var(--margen-1);
+        right: var(--margen-1);
+    }
+}
+
+/*Transformar a 2 columnas*/
+@media (max-width: 480px) {
+
+    .grid-seis-columnas,
+    .grid-cuatro-columnas,
+    .grid-tres-columnas {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .back-top {
+        bottom: var(--margen-1);
+        right: var(--margen-1);
+    }
+}
