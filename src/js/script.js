@@ -39,7 +39,7 @@ window.addEventListener("scroll", function () {
 
 /*
 -----------------------------------------------------------
-BOTON ENLACES EXTERNOS
+BOTON ENLACES EXTERNOS www.tecnoplc.com
 -----------------------------------------------------------
 */
 const tecnoplc = document.getElementById("tecnoplc");
@@ -48,6 +48,16 @@ tecnoplc.addEventListener("click", function () {
   window.open("https://www.tecnoplc.com", "_blank");
 });
 
+/*
+-----------------------------------------------------------
+BOTON ENLACES EXTERNOS Star Wars API
+-----------------------------------------------------------
+*/
+const starWars = document.getElementById("starWars");
+
+starWars.addEventListener("click", function () {
+  window.open("https://angelsandev.github.io/StarWars_API/", "_blank");
+});
 
 /*
 -----------------------------------------------------------
