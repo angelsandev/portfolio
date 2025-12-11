@@ -48,6 +48,7 @@ tecnoplc.addEventListener("click", function () {
   window.open("https://www.tecnoplc.com", "_blank");
 });
 
+
 /*
 -----------------------------------------------------------
 BOTON DE PORTFOLIO
