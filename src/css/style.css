@@ -646,8 +646,18 @@ RESPONSIVE
     }
 
     .grid-cuatro-columnas,
-    .grid-tres-columnas {
-        grid-template-columns: 1fr 1fr;
+    .grid-tres-columnas,
+    .grid-dos-columnas {
+        grid-template-columns: 1fr;
+    }
+
+    .lista-timeline {
+        margin-left: var(--margen-2);
+    }
+
+    .timeline-item {
+        position: relative;
+        margin-left: var(--margen-3);
     }
 
     .back-top {
@@ -656,13 +666,23 @@ RESPONSIVE
     }
 }
 
-/*Transformar a 2 columnas*/
+/*Transformar a 1 columnas*/
 @media (max-width: 480px) {
 
     .grid-seis-columnas,
     .grid-cuatro-columnas,
-    .grid-tres-columnas {
-        grid-template-columns: 1fr 1fr;
+    .grid-tres-columnas,
+    .grid-dos-columnas {
+        grid-template-columns: 1fr;
+    }
+
+    .lista-timeline {
+        margin-left: var(--margen-2);
+    }
+
+    .timeline-item {
+        position: relative;
+        margin-left: var(--margen-3);
     }
 
     .back-top {
