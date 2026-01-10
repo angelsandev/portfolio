@@ -669,7 +669,7 @@ RESPONSIVE
 /*Transformar a 1 columnas*/
 @media (max-width: 480px) {
 
-    .grid-seis-columnas,
+   /* .grid-seis-columnas,*/
     .grid-cuatro-columnas,
     .grid-tres-columnas,
     .grid-dos-columnas {
