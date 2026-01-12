@@ -1,5 +1,11 @@
 ## 🚀 Historial de cambios
 
+### [V0.1.1] Añadir Autor - 2026-1-12
+- **Pruebas:** ✅ Todo ok. 
+- **README:** Añadir autor al final de README.
+- **README:** Modificar botón de link a Demo de Portfolio => 2 colores.
+- **README:** Modificar texto inicial.
+
 ### [V0.1.0] Active-Sidebar - 2026-1-12
 - **Pruebas:** ✅ Todo ok. 
 - **Pruebas:** Comprobar activación de enlaces en Sidebar.

@@ -1,14 +1,15 @@
 # 🚀 Mi Portfolio Personal - Ángel Sánchez
 
-Bienvenido al repositorio de mi portfolio personal. Aquí combino varias fortalezas:
+Bienvenido al repositorio de mi portfolio personal. Aquí muestro toda mi experiencia, utilizando:
 * Una carta de presentación.
-* Una evolución técnica: desde la **programación industrial (PLC/HMI)** hacia el **desarrollo de aplicaciones web**.
+* Una evolución técnica: de la **programación industrial (PLC/HMI)** hacia el **desarrollo de aplicaciones web**.
+* Mis habilidades y aptitudes recogidas en el camino.
 
 > "20 años en programación industrial, ahora construyendo soluciones en la web."
 
 ---
 ### 🌐 Mi Portfolio Web
-[![Portfolio Ángel Sánchez](https://img.shields.io/badge/Visitar_Portfolio-0078D4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://angelsandev.github.io/portfolio)
+[![Portfolio Ángel Sánchez](https://img.shields.io/badge/Visitar-Portfolio-0078D4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://angelsandev.github.io/portfolio)
 
 ![Formación Académica](./src/images/Formación%20Académica%20en%20Portfolio.png)
 
@@ -74,3 +75,10 @@ Si necesitar observar este proyecto de forma local:
 │   │   └── script.js  # Observer API, eventos y lógica de scroll
 │   └── images/         # Assets y capturas de los proyectos
 └── README.md
+├── CHANGELOG.md
+```
+
+## ✍️ Autor
+Hecho con ❤️ por [**Ángel Sánchez Guillén**](https://github.com/tu-usuario)
+
+[![Email](https://img.shields.io/badge/Email-geletesan@hotmail.com-red?style=flat-square&logo=gmail)](mailto:geletesan@hotmail.com)
