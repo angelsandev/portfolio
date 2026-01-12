@@ -100,6 +100,11 @@ h2 {
     margin-bottom: var(--margen-1);
     /*width: fit-content;*/
 }
+/* Al llegar mediante scrollIntoView, 
+   se detiene 30px antes */
+h2[id] {
+    scroll-margin-top: 90px;
+}
 
 h3 {
     font-size: var(--texto-24);
@@ -224,7 +229,7 @@ MENÚ NAVEGACIÓN EN SIDE BAR
     transition: var(--transicion-06);
 }
 
-.nav li a:active {
+.nav li a.active {
     background: var(--fondo-oscuro-80);
     box-shadow: inset -6px 0 0 var(--color-texto-naranja);
 }

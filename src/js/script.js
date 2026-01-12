@@ -11,6 +11,76 @@ menuToggler.addEventListener('click', function () {
   sideBar.classList.toggle('active');
 });
 
+
+/*
+-----------------------------------------------------------
+ACTIVAR ELEMENTOS DE NAVEGACION DEL SIDEBAR
+-----------------------------------------------------------
+*/
+const nav = document.querySelector('.nav');
+const uno = document.querySelectorAll('li a');    //devuelve una lista de elementos
+
+nav.addEventListener('click', function (event) {
+
+  uno.forEach((elemento) => {                     //recorrer todos los elementos del menu nav
+    elemento.classList.remove('active');
+  });
+  const clic = event.target.closest('a');         //target devuelve lo que el usuario toca
+
+  clic.classList.add('active');                   //Activar el elemento del menú que se ha clicado
+
+  console.log(clic);
+
+  //-------------------DESPLAZAMIENTO SUAVE-------------------------------------//
+  const ancla = clic.getAttribute('href');          //ancla tendrá el valor activado, ej.: #about (esto es el id del enlace)
+  const enlace = document.querySelector(ancla);
+  if (enlace) {
+    event.preventDefault();                         //Evita el desplazamiento brusco inicial
+    enlace.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'                                 // Se alinea al principio de la sección 
+    });
+  }
+});
+
+/*
+-----------------------------------------------------------
+ACTIVAR ELEMENTOS DE NAVEGACION CON SCROLL, DEL SIDEBAR
+SCROLL SPY
+IntersectionObserver=> API de JS => ejecuta una funcion cuando un elemento entra o sale del viewport
+-----------------------------------------------------------
+*/
+const secciones = document.querySelectorAll('section[id], h2[id]');  //seleccionar las secciones con un id
+
+document.addEventListener('DOMContentLoaded', function () {
+  //offest de visualización
+  const offset = {
+    threshold: 0.6                                                        //El 80% de la sección debe estar visible
+  };
+  const vigilante = new IntersectionObserver((secciones) => {
+    secciones.forEach((seccion) => {                                      //Recorrer cada sección guardada
+      if (seccion.isIntersecting) {                                       // Si la sección ocupa al menos el 50% de la pantalla (isIntersecting)
+        const id = seccion.target.getAttribute('id');                     //target devuelve lo que está activado
+        const enlace = document.querySelector(`.nav li a[href="#${id}"]`);// Buscamos el enlace que tiene href="#idActual"
+        console.log("ID detectdo ",id);
+        console.log("Enlace encontrado ",enlace);
+        
+        if (enlace) {
+          uno.forEach((elemento) => {                                     //recorrer todos los elementos del menu nav
+          elemento.classList.remove('active');
+        });
+          enlace.classList.add('active');                                 //Activar el enlace de la sección actual
+        }
+        
+      }
+    });
+  }, offset);
+  secciones.forEach((seccion) => vigilante.observe(seccion));              //Activar el vigilante para cada sección  
+
+});
+
+
+
 /*
 -----------------------------------------------------------
 BOTON BACK TO TOP
@@ -32,7 +102,7 @@ window.addEventListener("scroll", function () {
   } else {
     backTop.style.display = "none";
   }
- 
+
 });
 
 
