@@ -79,6 +79,6 @@ Si necesitar observar este proyecto de forma local:
 ```
 
 ## ✍️ Autor
-Hecho con ❤️ por [**Ángel Sánchez Guillén**](https://github.com/tu-usuario)
+Hecho con ❤️ por [**Ángel Sánchez Guillén**](https://github.com/angelsandev)
 
 [![Email](https://img.shields.io/badge/Email-geletesan@hotmail.com-red?style=flat-square&logo=gmail)](mailto:geletesan@hotmail.com)

@@ -1,5 +1,19 @@
 ## 🚀 Historial de cambios
 
+### [V0.1.2] Actualizar CV y Portfolio - 2026-2-20
+- **Pruebas:** ✅ Todo ok. 
+- **Pruebas:** ✅ Probar todos los enlaces de Portfolio y el modal card con imagen. 
+- **Datos:** Añadir datos actulizados de experiencia y del CV.
+- **Estructura** Eliminar iconos de sección de `Habilidades`.
+- **Estructura** Añadir iconos `Siemens` en sección de `Habilidades`.
+- **Estructura** Añadir proyecto `El Tiempo` en sección de `Portfolio`.
+- **Estructura** Añadir proyecto `Entrenama+` en sección de `Portfolio`.
+- **Imagenes** Añadir imagenes a la carpeta de `images`.
+- **JavaScript** Añadir evento para salto a la web de `El Tiempo`.
+- **JavaScript** Añadir evento para salto a repositorio de `GitHub` desde el Portfolio.
+- **JavaScript** Añadir evento para mostrar modal card `Entrena+` desde el Portfolio.
+- **CSS:** Añadir clases para modal card de Entrena+.
+
 ### [V0.1.1] Añadir Autor - 2026-1-12
 - **Pruebas:** ✅ Todo ok. 
 - **README:** Añadir autor al final de README.

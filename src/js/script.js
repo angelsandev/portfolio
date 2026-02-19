@@ -131,13 +131,37 @@ starWars.addEventListener("click", function () {
 
 /*
 -----------------------------------------------------------
-BOTON DE PORTFOLIO
+BOTON ENLACES EXTERNOS El Tiempo API
+-----------------------------------------------------------
+*/
+const clima = document.getElementById("clima");
+
+clima.addEventListener("click", function () {
+  window.open("https://angelsandev.github.io/ELTIEMPO/", "_blank");
+});
+
+/*
+-----------------------------------------------------------
+BOTON DE PORTFOLIO Salto al repositorio de GitHub
 -----------------------------------------------------------
 */
 const inicio = document.getElementById("inicio");
 inicio.addEventListener("click", function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  })
+  window.open("https://github.com/angelsandev/portfolio", "_blank");
+});
+
+
+/*
+-----------------------------------------------------------
+BOTON DE ENTRENA+  Abre un modal card
+-----------------------------------------------------------
+*/
+const abrirEntrena = document.getElementById("abrirEntrena");
+const modalSimple = document.getElementById("modalSimple");
+abrirEntrena.addEventListener("click", function () {
+  modalSimple.style.display = "block";
+});
+
+modalSimple.addEventListener("click", function () {
+  modalSimple.style.display = "none";
 });

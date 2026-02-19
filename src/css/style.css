@@ -100,6 +100,7 @@ h2 {
     margin-bottom: var(--margen-1);
     /*width: fit-content;*/
 }
+
 /* Al llegar mediante scrollIntoView, 
    se detiene 30px antes */
 h2[id] {
@@ -547,6 +548,55 @@ BOTON HAMBURGUESA PARA SIDEBAR RESPONSIVE
 
 /*
 --------------------------------------------------------------
+# MODAL CARD EN PORTFOLIO
+--------------------------------------------------------------
+*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fondo-oscuro-90);
+    cursor: zoom-out;
+}
+
+/* La imagen dentro del modal */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+    margin-top: 50px;
+    border: 3px solid var(--color-texto-naranja);
+    border-radius: 10px;
+}
+
+#caption {
+    text-align: center;
+    color: var(--color-texto-blanco);
+    padding: 15px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: var(--color-texto-blanco);
+    font-size: var(--margen-5);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*
+--------------------------------------------------------------
 # CONTACT FORM
 --------------------------------------------------------------
 */
@@ -674,7 +724,7 @@ RESPONSIVE
 /*Transformar a 1 columnas*/
 @media (max-width: 480px) {
 
-   /* .grid-seis-columnas,*/
+    /* .grid-seis-columnas,*/
     .grid-cuatro-columnas,
     .grid-tres-columnas,
     .grid-dos-columnas {
