@@ -165,3 +165,13 @@ abrirEntrena.addEventListener("click", function () {
 modalSimple.addEventListener("click", function () {
   modalSimple.style.display = "none";
 });
+
+/*
+-----------------------------------------------------------
+BOTON DE PORTFOLIO Salto a los repositorios de GitHub
+-----------------------------------------------------------
+*/
+const repositorios = document.getElementById("repositorios");
+repositorios.addEventListener("click", function () {
+  window.open("https://github.com/angelsandev?tab=repositories", "_blank");
+});

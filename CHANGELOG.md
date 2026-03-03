@@ -1,5 +1,12 @@
 ## 🚀 Historial de cambios
 
+### [V0.1.3] Actualizar Experiencia y Portfolio - 2026-3-03
+- **Pruebas:** ✅ Todo ok. 
+- **Pruebas:** ✅ Probar todos los enlaces de Portfolio
+- **Datos:** Añadir datos actulizados de experiencia en EAN.
+- **Estructura** Añadir proyecto `Repositorios` en sección de `Portfolio`.
+- **JavaScript** Añadir evento para salto a los repositorios de `GitHub` desde el Portfolio.
+
 ### [V0.1.2] Actualizar CV y Portfolio - 2026-2-20
 - **Pruebas:** ✅ Todo ok. 
 - **Pruebas:** ✅ Probar todos los enlaces de Portfolio y el modal card con imagen. 
