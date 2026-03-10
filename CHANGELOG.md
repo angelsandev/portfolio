@@ -1,5 +1,11 @@
 ## 🚀 Historial de cambios
 
+### [V0.1.4] Solucion visualización imagen - 2026-3-03
+- **Pruebas:** ✅ Todo ok. 
+- **Pruebas:** ✅ No se veía la imagen del Modal popup que mostraba la imagen del proyecto Entrena+.
+- **Pruebas:** En GitHub pages no funcionaba la visualización de la imagen debido a una letra en minúsculas en la url.
+
+
 ### [V0.1.3] Actualizar Experiencia y Portfolio - 2026-3-03
 - **Pruebas:** ✅ Todo ok. 
 - **Pruebas:** ✅ Probar todos los enlaces de Portfolio
