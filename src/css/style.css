@@ -13,6 +13,10 @@ ESTILO PARA TODOS LOS TEXTOS
     --fondo-claro-100: #dde2e2;
     --fondo-azul: linear-gradient(135deg, #065af7, #6093f1);
 
+    /* Hitos */
+    --color-hito: #00bcd4; /* Cian para los datos clave */
+    --fondo-logro-hover: rgba(0, 188, 212, 0.05);
+
     /*Colores textos*/
     --color-texto-blanco: #ffffff;
     --color-texto-negro: #000000;
@@ -262,6 +266,11 @@ CENTRAR EL TEXTO. LOS ICONOS COMO TB SON TEXTO, SE CENTRAN ASÍ
     text-align: center;
 }
 
+strong {
+  color: #00bcd4; /* Un cian brillante que resalta mucho en fondo negro */
+  font-weight: 600;
+}
+
 /*
 -----------------------------------------------------------
 ESTILO PARA LAYOUT GRID
@@ -369,6 +378,43 @@ CON EL HOVER
     transform: translateY(-0.2em);
     cursor: pointer;
 }
+
+
+/* -----------------------------------------------------------
+MEJORAS ESPECÍFICAS PARA LA SECCIÓN LOGROS
+-----------------------------------------------------------
+*/
+
+/* strong en logros brillen más */
+#logros-container .modulo-color strong {
+    color: var(--color-hito);
+    font-size: var(--texto-21); 
+    text-shadow: 0 0 8px rgba(0, 188, 212, 0.3);
+    transition: var(--transicion-025);
+}
+
+/* Ajuste de alineación para que el texto no se centre si es largo */
+#logros-container .modulo-color {
+    align-items: flex-start; 
+    text-align: left;
+    border-left: 4px solid transparent; 
+}
+
+/* Efecto hover personalizado para Logros */
+#logros-container .modulo-color:hover {
+    border-left: 4px solid var(--color-hito);
+    background: var(--fondo-oscuro-90); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Iconos o emojis al lado del h3 */
+#logros-container h3::before {
+    margin-right: 10px;
+}
+
+
+
+
 
 /*
 -----------------------------------------------------------

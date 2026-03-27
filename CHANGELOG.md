@@ -1,5 +1,12 @@
 ## 🚀 Historial de cambios
 
+### [V0.1.5] Update CV - 2026-3-27
+- **Pruebas:** ✅ Todo ok. 
+- **Pruebas:** ✅ Actualizar datos Experiencia Profesional y añadir Logros.
+- **Estructura** Añadir nuevas `cards` con los logros. Añadir menú de navegación `logros`.
+- **CSS:** Añadir clases para modal card de los logros.
+- **CSS:** Los textos `strong` ahora serán de color cian que resalta más.
+
 ### [V0.1.4] Solucion visualización imagen - 2026-3-03
 - **Pruebas:** ✅ Todo ok. 
 - **Pruebas:** ✅ No se veía la imagen del Modal popup que mostraba la imagen del proyecto Entrena+.
