@@ -1,5 +1,12 @@
 ## 🚀 Historial de cambios
 
+### [V0.1.6] Update CV - 2026-4-26
+- **Pruebas:** ✅ Todo ok. 
+- **Pruebas:** ✅ Actualizar datos Experiencia Profesional y añadir Logros.
+- **Estructura** Eliminar proyectos `StarWars` y `^Portfolio` y añadir los de Landing Gate y Scraping.
+- **Estructura** Añadir formaciones extra.
+- **Estructura** Añadir todas las cards de los nuevos Logros.
+
 ### [V0.1.5] Update CV - 2026-3-27
 - **Pruebas:** ✅ Todo ok. 
 - **Pruebas:** ✅ Actualizar datos Experiencia Profesional y añadir Logros.

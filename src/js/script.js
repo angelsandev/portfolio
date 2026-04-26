@@ -121,14 +121,16 @@ tecnoplc.addEventListener("click", function () {
 /*
 -----------------------------------------------------------
 BOTON ENLACES EXTERNOS Star Wars API
+Se ha comentado en el HTML para evitar que el botón aparezca
 -----------------------------------------------------------
 */
+/*
 const starWars = document.getElementById("starWars");
 
 starWars.addEventListener("click", function () {
   window.open("https://angelsandev.github.io/StarWars_API/", "_blank");
 });
-
+*/
 /*
 -----------------------------------------------------------
 BOTON ENLACES EXTERNOS El Tiempo API
@@ -143,13 +145,15 @@ clima.addEventListener("click", function () {
 /*
 -----------------------------------------------------------
 BOTON DE PORTFOLIO Salto al repositorio de GitHub
+Se ha comentado en el HTML para evitar que el botón aparezca
 -----------------------------------------------------------
 */
+/*
 const inicio = document.getElementById("inicio");
 inicio.addEventListener("click", function () {
   window.open("https://github.com/angelsandev/portfolio", "_blank");
 });
-
+*/
 
 /*
 -----------------------------------------------------------
@@ -174,4 +178,24 @@ BOTON DE PORTFOLIO Salto a los repositorios de GitHub
 const repositorios = document.getElementById("repositorios");
 repositorios.addEventListener("click", function () {
   window.open("https://github.com/angelsandev?tab=repositories", "_blank");
+});
+
+/*
+-----------------------------------------------------------
+BOTON DE Landing Page con Astro. 
+-----------------------------------------------------------
+*/
+const landingGate = document.getElementById("landing-gate");
+landingGate.addEventListener("click", function () {
+  window.open("https://github.com/angelsandev/pdf-landing-gate", "_blank");
+});
+
+/*
+-----------------------------------------------------------
+BOTON DE Web Scraping. 
+-----------------------------------------------------------
+*/
+const scraping = document.getElementById("scraping");
+scraping.addEventListener("click", function () {
+  window.open("https://github.com/angelsandev/comparador_web", "_blank");
 });
