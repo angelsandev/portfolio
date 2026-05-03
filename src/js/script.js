@@ -132,16 +132,20 @@ starWars.addEventListener("click", function () {
 });
 */
 /*
+
+
+/*
 -----------------------------------------------------------
 BOTON ENLACES EXTERNOS El Tiempo API
 -----------------------------------------------------------
 */
+/*
 const clima = document.getElementById("clima");
 
 clima.addEventListener("click", function () {
   window.open("https://angelsandev.github.io/ELTIEMPO/", "_blank");
 });
-
+*/
 /*
 -----------------------------------------------------------
 BOTON DE PORTFOLIO Salto al repositorio de GitHub
@@ -198,4 +202,16 @@ BOTON DE Web Scraping.
 const scraping = document.getElementById("scraping");
 scraping.addEventListener("click", function () {
   window.open("https://github.com/angelsandev/comparador_web", "_blank");
+});
+
+/*
+-----------------------------------------------------------
+BOTON Proyecto MQTT
+-----------------------------------------------------------
+*/
+
+const mqtt = document.getElementById("mqtt-dash");
+
+mqtt.addEventListener("click", function () {
+  window.open("https://mqttsync-dash-frontend.vercel.app/", "_blank");
 });

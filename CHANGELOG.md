@@ -1,5 +1,9 @@
 ## 🚀 Historial de cambios
 
+### [V0.1.7] Update CV - 2026-4-26
+- **Pruebas:** ✅ Todo ok. 
+- **Pruebas:** ✅ Actualizar datos Estudios DAW y Portfolio añadir MQTT project.
+
 ### [V0.1.6] Update CV - 2026-4-26
 - **Pruebas:** ✅ Todo ok. 
 - **Pruebas:** ✅ Actualizar datos Experiencia Profesional y añadir Logros.
